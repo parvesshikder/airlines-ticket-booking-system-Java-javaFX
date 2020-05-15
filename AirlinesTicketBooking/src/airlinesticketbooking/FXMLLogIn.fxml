@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlinesticketbooking.FXMLLogInController">
+   <children>
+      <Label fx:id="label" layoutX="-4.0" minHeight="16" minWidth="69" prefHeight="63.0" prefWidth="797.0" style="-fx-background-color: #295598; -fx-border-color: 3px;" text="                   Welcome to " textAlignment="JUSTIFY" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="111.0" fitWidth="283.0" layoutX="374.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/jetcabin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="home" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: none; -fx-border-radius: 0px;" text="HOME" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="checkin" layoutX="129.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: none;" text="CHECK IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="flightstatus" graphicTextGap="0.0" layoutX="258.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="169.0" style="-fx-background-color: none;" text="FLIGHT STATUS">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="modify" graphicTextGap="0.0" layoutX="427.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: none;" text="MODIFY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="support" graphicTextGap="0.0" layoutX="556.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: none;" text="SUPPORT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="login" graphicTextGap="0.0" layoutX="685.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: none;" text="LOG IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="365.0" layoutY="131.0" prefHeight="35.0" prefWidth="218.0" text="Log In">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="mainloginbutton" layoutX="276.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="293.0" style="-fx-background-color: #275191;" text="Log In" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="password" layoutX="276.0" layoutY="234.0" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="293.0" promptText="Password" />
+      <TextField fx:id="userid" layoutX="276.0" layoutY="188.0" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="293.0" promptText="ID" />
+      <Label layoutX="81.0" layoutY="197.0" prefHeight="19.0" prefWidth="188.0" text="User Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="246.0" prefHeight="19.0" prefWidth="188.0" text="Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="356.0" prefHeight="35.0" prefWidth="251.0" text="Want to create a new account?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="getsign" layoutX="357.0" layoutY="391.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: #275191;" text="Sign Up" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Separator layoutY="118.0" prefHeight="4.0" prefWidth="793.0" />
+   </children>
+</AnchorPane>

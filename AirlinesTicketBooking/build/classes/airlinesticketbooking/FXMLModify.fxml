@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airlinesticketbooking.FXMLModifyController">
+   <children>
+      <Label fx:id="label" minHeight="16" minWidth="69" prefHeight="63.0" prefWidth="794.0" style="-fx-background-color: #295598; -fx-border-color: 3px;" text="                   Welcome to " textAlignment="JUSTIFY" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="111.0" fitWidth="283.0" layoutX="380.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/jetcabin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="home" layoutX="4.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: none; -fx-border-radius: 0px;" text="HOME" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="checkin" layoutX="133.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: none;" text="CHECK IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="flightstatus" graphicTextGap="0.0" layoutX="262.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="169.0" style="-fx-background-color: none;" text="FLIGHT STATUS">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="modify" graphicTextGap="0.0" layoutX="431.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: none;" text="MODIFY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="support" graphicTextGap="0.0" layoutX="560.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: none;" text="SUPPORT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="login" graphicTextGap="0.0" layoutX="689.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: none;" text="LOG IN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="311.0" layoutY="120.0" prefHeight="35.0" prefWidth="200.0" text="Modify Date">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="8.0" layoutY="118.0" prefHeight="2.0" prefWidth="789.0" />
+      <Label layoutX="301.0" layoutY="182.0" prefHeight="17.0" prefWidth="246.0" text="*Before 4 days of the Flight only" />
+      <TextField fx:id="passengername" layoutX="296.0" layoutY="216.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="255.0" promptText="Name" />
+      <TextField fx:id="flightNumber" layoutX="296.0" layoutY="253.0" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="255.0" promptText="Flight Number" />
+      <Label layoutX="50.0" layoutY="218.0" prefHeight="17.0" prefWidth="200.0" text="Name of the Passenger">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="255.0" prefHeight="17.0" prefWidth="200.0" text="Flight Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="288.0" prefHeight="17.0" prefWidth="200.0" text="Booking Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="bookingDate" layoutX="296.0" layoutY="286.0" prefHeight="25.0" prefWidth="255.0" />
+      <DatePicker fx:id="newbookingDate" layoutX="296.0" layoutY="320.0" prefHeight="25.0" prefWidth="255.0" />
+      <Label layoutX="50.0" layoutY="322.0" prefHeight="17.0" prefWidth="200.0" text="New Booking Date">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmbutton" layoutX="296.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="255.0" style="-fx-background-color: #295598;" text="Confirm" textFill="#f2f0f0" />
+   </children>
+</AnchorPane>
